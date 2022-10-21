@@ -24,17 +24,45 @@ nav img{
     flex: 1;
     text-align: right;
 }
-.nav-links ul li{
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+/* .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
-}
-.nav-links ul li a{
+} */
+/* .nav-links ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 13px;
+} */
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
 }
+
+ul li a:hover{
+    color: #f44336;
+}
+
 .nav-links ul li::after{
     content: '';
     width: 0%;
@@ -44,9 +72,9 @@ nav img{
     margin: auto;
     transition: 0.5s;
 }
-.nav-links ul li:hover::after{
+/* .nav-links ul li:hover::after{
     width: 100%;
-}
+} */
 .text-box{
     width: 90%;
     color: #fff;
@@ -115,7 +143,7 @@ nav .fa{
     }
 }
 
-/*---- course -----*/
+/*---- service -----*/
 
 .service{
     width: 80%;
